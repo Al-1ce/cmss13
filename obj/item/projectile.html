@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item&#x2F;projectile - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item/projectile.html#var">Var Details</a> - <a href="obj/item/projectile.html#proc">Proc Details</a></header>
+<main>
+<h1>projectile <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/projectile.html">projectile</a></aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 7"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/angle">angle</a></th><td>Direct angle at firing time, in degrees from BYOND NORTH, used for visual updates and path extension</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/bound_beam">bound_beam</a></th><td>The beam linked to the projectile. Can be utilized for things like grappling hooks, harpoon guns, tripwire guns, etc..</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/hit_effect_color">hit_effect_color</a></th><td>The flicker that plays when a bullet hits a target. Usually red. Can be nulled so it doesn't show up at all.</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/projectile_flags">projectile_flags</a></th><td>Flags for behaviors of the projectile itself</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/projectile_override_flags">projectile_override_flags</a></th><td>Additional ammo flags applied to the projectile</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/runtime_iff_group">runtime_iff_group</a></th><td>This is the iff_group</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/speed">speed</a></th><td>How many turfs per 1ds the projectile travels</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/time_carry">time_carry</a></th><td>How much time has the projectile carried for fractional movement, in seconds (delta_time format)</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/vis_source">vis_source</a></th><td>Origin point for tracing and visual updates</td></tr>
+            <tr><th><a href="obj/item/projectile.html#var/vis_travelled">vis_travelled</a></th><td>Turfs traveled so far, for use in visual updates, in conjunction with angle for projection</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/item/projectile.html#proc/fly">fly</a></th><td>Flies the projectile forward one single turf</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/angle"><aside class="declaration">var </aside>angle
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 46"/></a></h3>
+        <p>Direct angle at firing time, in degrees from BYOND NORTH, used for visual updates and path extension</p><h3 id="var/bound_beam"><aside class="declaration">var </aside>bound_beam
+            <aside>&ndash; /<a href="obj.html">obj</a>/effect</aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L68">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 68"/></a></h3>
+        <p>The beam linked to the projectile. Can be utilized for things like grappling hooks, harpoon guns, tripwire guns, etc..</p><h3 id="var/hit_effect_color"><aside class="declaration">var </aside>hit_effect_color
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L71">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 71"/></a></h3>
+        <p>The flicker that plays when a bullet hits a target. Usually red. Can be nulled so it doesn't show up at all.</p><h3 id="var/projectile_flags"><aside class="declaration">var </aside>projectile_flags
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 39"/></a></h3>
+        <p>Flags for behaviors of the projectile itself</p><h3 id="var/projectile_override_flags"><aside class="declaration">var </aside>projectile_override_flags
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 37"/></a></h3>
+        <p>Additional ammo flags applied to the projectile</p><h3 id="var/runtime_iff_group"><aside class="declaration">var </aside>runtime_iff_group
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/datums/elements/bullet_trait/iff.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;elements&#x2F;bullet_trait&#x2F;iff.dm 2"/></a></h3>
+        <p>This is the iff_group</p><h3 id="var/speed"><aside class="declaration">var </aside>speed
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 44"/></a></h3>
+        <p>How many turfs per 1ds the projectile travels</p><h3 id="var/time_carry"><aside class="declaration">var </aside>time_carry
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 42"/></a></h3>
+        <p>How much time has the projectile carried for fractional movement, in seconds (delta_time format)</p><h3 id="var/vis_source"><aside class="declaration">var </aside>vis_source
+            <aside>&ndash; /<a href="turf.html">turf</a></aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L50">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 50"/></a></h3>
+        <p>Origin point for tracing and visual updates</p><h3 id="var/vis_travelled"><aside class="declaration">var </aside>vis_travelled
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 48"/></a></h3>
+        <p>Turfs traveled so far, for use in visual updates, in conjunction with angle for projection</p><h2 id="proc">Proc Details</h2><h3 id="proc/fly"><aside class="declaration">proc </aside>fly<aside>() 
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/projectiles/projectile.dm#L270">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile.dm 270"/></a></aside>
+        </h3>
+        <p>Flies the projectile forward one single turf</p></main>
+<footer>
+    colonialmarines.dme
+    <a href="https://github.com/cmss13-devs/cmss13/tree/ca679474037f2dee1f9e46a466428087ba02e54c">ca67947</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

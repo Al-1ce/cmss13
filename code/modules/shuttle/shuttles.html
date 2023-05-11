@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;modules&#x2F;shuttle&#x2F;shuttles.md - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+</header>
+<main>
+<h1>Shuttle Module <aside>code/modules/shuttle/shuttles.md</aside> 
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/modules/shuttle/shuttles.md">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;shuttle&#x2F;shuttles.md"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><td colspan="2"><p>Heres some notes which help understand what is going on.</p>
+<p>A shuttle is split into two docking ports: a mobile one, which is the shuttle itself, and the stationary one - where the shuttle can come to a rest.</p>
+<p>The map template <code>/datum/map_template/shuttle/ert1</code> - give it a unique name and the <code>shuttle_id</code> parameter is the map name you are using for the shuttle.</p>
+<p>The map template shuttle_id points to the file in folder <code>maps\shuttles</code>. It also refers to the <code>id</code> variable in the mobile docking port. The best way to resolve this is using a define in <code>code\__DEFINES\shuttles.dm</code>.</p>
+<h2 id="shuttle-map-templates">Shuttle map templates</h2>
+<p>Shuttle map templates are used to define what the shuttle should look like.</p>
+<h2 id="shuttle-dimensions">Shuttle dimensions</h2>
+<p>When defining the shuttle dimensions, define the height/width as if it was orienting north. The subsystem will properly line everything up, this allows for stationary docks to be in different orientations to their defined map template.</p>
+<p>A shuttle has a height, width, dheight and dwidth. The height and width is the size of the shuttle, with respect to its direction. If the template direction is North/South then width is your X coordinate and height is your Y. If the template direction is East/West then width is your Y direction and height is your X. On stationary docking ports, you can specify dwidth and dheight (auto generated for mobile), these are offsets for how your shuttle should land on the site. When a mobile port lands on a stationary port it wants to place the bottom left of the shuttle turfs on the stationary port. The dwidth/dheight allows you to offset this.</p></td></tr></table></main>
+<footer>
+    colonialmarines.dme
+    <a href="https://github.com/cmss13-devs/cmss13/tree/ca679474037f2dee1f9e46a466428087ba02e54c">ca67947</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

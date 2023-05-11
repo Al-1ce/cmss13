@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm 
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DESTROY_AIRLOCK">COMSIG_MOB_DESTROY_AIRLOCK</a></th><td>From /obj/structure/machinery/door/airlock/proc/take_damage</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DISASSEMBLE_AIRLOCK">COMSIG_MOB_DISASSEMBLE_AIRLOCK</a></th><td>From /obj/structure/machinery/door/airlock/attackby</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DESTROY_WALL">COMSIG_MOB_DESTROY_WALL</a></th><td>From /turf/closed/wall/proc/take_damage</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_EXPLODED_WALL">COMSIG_MOB_EXPLODED_WALL</a></th><td>From /turf/closed/wall/ex_act</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_CONSTRUCT_WALL">COMSIG_MOB_CONSTRUCT_WALL</a></th><td>From /obj/structure/girder/proc/do_wall</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_EXPLODE_W_FRAME">COMSIG_MOB_EXPLODE_W_FRAME</a></th><td>From /obj/structure/window/framed/ex_act</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DISASSEMBLE_W_FRAME">COMSIG_MOB_DISASSEMBLE_W_FRAME</a></th><td>From /obj/structure/window_frame/attackby</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DESTROY_WINDOW">COMSIG_MOB_DESTROY_WINDOW</a></th><td>From /obj/structure/window/proc/healthcheck</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_WINDOW_EXPLODED">COMSIG_MOB_WINDOW_EXPLODED</a></th><td>From /obj/structure/window/ex_act</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_CONSTRUCT_WINDOW">COMSIG_MOB_CONSTRUCT_WINDOW</a></th><td>From /obj/structure/window_frame/attackby</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DISASSEMBLE_WINDOW">COMSIG_MOB_DISASSEMBLE_WINDOW</a></th><td>From /obj/structure/window/attackby</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_APC_REMOVE_BOARD">COMSIG_MOB_APC_REMOVE_BOARD</a></th><td>From /obj/structure/machinery/power/apc/attackby</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_APC_REMOVE_CELL">COMSIG_MOB_APC_REMOVE_CELL</a></th><td>From /obj/structure/machinery/power/apc/attack_hand</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_APC_CUT_WIRE">COMSIG_MOB_APC_CUT_WIRE</a></th><td>From /obj/structure/machinery/power/apc/proc/cut</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_APC_POWER_PULSE">COMSIG_MOB_APC_POWER_PULSE</a></th><td>From /obj/structure/machinery/power/apc/proc/pulse</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_FIRED_GUN">COMSIG_MOB_FIRED_GUN</a></th><td>From /projectiles/updated_projectiles/guns/proc/fire</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_FIRED_GUN_ATTACHMENT">COMSIG_MOB_FIRED_GUN_ATTACHMENT</a></th><td>From /projectiles/updated_projectiles/guns/proc/fire_attachment</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DEATH">COMSIG_MOB_DEATH</a></th><td>From /mob/proc/death</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_GETTING_UP">COMSIG_MOB_GETTING_UP</a></th><td>From /mob/proc/update_canmove()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_KNOCKED_DOWN">COMSIG_MOB_KNOCKED_DOWN</a></th><td>From /mob/proc/update_canmove()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DRAGGED">COMSIG_MOB_DRAGGED</a></th><td>For when a mob is dragged</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_ITEM_UNEQUIPPED">COMSIG_MOB_ITEM_UNEQUIPPED</a></th><td>From /obj/item/proc/unequipped()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_DEVOURED">COMSIG_MOB_DEVOURED</a></th><td>For when a mob is devoured by a Xeno</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_SET_FACE_DIR">COMSIG_MOB_SET_FACE_DIR</a></th><td>From base of /mob/proc/set_face_dir(): (newdir)</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_WEED_SLOWDOWN">COMSIG_MOB_WEED_SLOWDOWN</a></th><td>From /obj/effect/alien/weeds/Crossed(atom/movable/AM)</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_CHANGE_VIEW">COMSIG_MOB_CHANGE_VIEW</a></th><td>called in /client/change_view()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_RESET_VIEW">COMSIG_MOB_RESET_VIEW</a></th><td>Called in /mob/reset_view(): (atom/A)</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_LOGIN">COMSIG_MOB_LOGIN</a></th><td>from base of /mob/Login(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_LOGOUT">COMSIG_MOB_LOGOUT</a></th><td>from base of /mob/Logout(): ()</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_GRAB_UPGRADE">COMSIG_MOB_GRAB_UPGRADE</a></th><td>From /obj/item/grab/attack_self(mob/user)</td></tr>
+        <tr><th><a href="code/__DEFINES/dcs/signals/atom/mob/signals_mob.html#define/COMSIG_MOB_EMOTE">COMSIG_MOB_EMOTE</a></th><td>from /mob/living/emote(): ()</td></tr></table><h2 id="define">Define Details</h2>
+<h3 id="define/COMSIG_MOB_APC_CUT_WIRE"><aside class="declaration">#define </aside>COMSIG_MOB_APC_CUT_WIRE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 29"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/power/apc/proc/cut</p><h3 id="define/COMSIG_MOB_APC_POWER_PULSE"><aside class="declaration">#define </aside>COMSIG_MOB_APC_POWER_PULSE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 31"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/power/apc/proc/pulse</p><h3 id="define/COMSIG_MOB_APC_REMOVE_BOARD"><aside class="declaration">#define </aside>COMSIG_MOB_APC_REMOVE_BOARD
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 25"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/power/apc/attackby</p><h3 id="define/COMSIG_MOB_APC_REMOVE_CELL"><aside class="declaration">#define </aside>COMSIG_MOB_APC_REMOVE_CELL
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 27"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/power/apc/attack_hand</p><h3 id="define/COMSIG_MOB_CHANGE_VIEW"><aside class="declaration">#define </aside>COMSIG_MOB_CHANGE_VIEW
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L62">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 62"/></a>
+    </h3>
+    <p>called in /client/change_view()</p><h3 id="define/COMSIG_MOB_CONSTRUCT_WALL"><aside class="declaration">#define </aside>COMSIG_MOB_CONSTRUCT_WALL
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 11"/></a>
+    </h3>
+    <p>From /obj/structure/girder/proc/do_wall</p><h3 id="define/COMSIG_MOB_CONSTRUCT_WINDOW"><aside class="declaration">#define </aside>COMSIG_MOB_CONSTRUCT_WINDOW
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 21"/></a>
+    </h3>
+    <p>From /obj/structure/window_frame/attackby</p><h3 id="define/COMSIG_MOB_DEATH"><aside class="declaration">#define </aside>COMSIG_MOB_DEATH
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 37"/></a>
+    </h3>
+    <p>From /mob/proc/death</p><h3 id="define/COMSIG_MOB_DESTROY_AIRLOCK"><aside class="declaration">#define </aside>COMSIG_MOB_DESTROY_AIRLOCK
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L2">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 2"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/door/airlock/proc/take_damage</p><h3 id="define/COMSIG_MOB_DESTROY_WALL"><aside class="declaration">#define </aside>COMSIG_MOB_DESTROY_WALL
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 7"/></a>
+    </h3>
+    <p>From /turf/closed/wall/proc/take_damage</p><h3 id="define/COMSIG_MOB_DESTROY_WINDOW"><aside class="declaration">#define </aside>COMSIG_MOB_DESTROY_WINDOW
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 17"/></a>
+    </h3>
+    <p>From /obj/structure/window/proc/healthcheck</p><h3 id="define/COMSIG_MOB_DEVOURED"><aside class="declaration">#define </aside>COMSIG_MOB_DEVOURED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 48"/></a>
+    </h3>
+    <p>For when a mob is devoured by a Xeno</p><h3 id="define/COMSIG_MOB_DISASSEMBLE_AIRLOCK"><aside class="declaration">#define </aside>COMSIG_MOB_DISASSEMBLE_AIRLOCK
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 5"/></a>
+    </h3>
+    <p>From /obj/structure/machinery/door/airlock/attackby</p><h3 id="define/COMSIG_MOB_DISASSEMBLE_WINDOW"><aside class="declaration">#define </aside>COMSIG_MOB_DISASSEMBLE_WINDOW
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L23">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 23"/></a>
+    </h3>
+    <p>From /obj/structure/window/attackby</p><h3 id="define/COMSIG_MOB_DISASSEMBLE_W_FRAME"><aside class="declaration">#define </aside>COMSIG_MOB_DISASSEMBLE_W_FRAME
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 15"/></a>
+    </h3>
+    <p>From /obj/structure/window_frame/attackby</p><h3 id="define/COMSIG_MOB_DRAGGED"><aside class="declaration">#define </aside>COMSIG_MOB_DRAGGED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L43">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 43"/></a>
+    </h3>
+    <p>For when a mob is dragged</p><h3 id="define/COMSIG_MOB_EMOTE"><aside class="declaration">#define </aside>COMSIG_MOB_EMOTE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L100">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 100"/></a>
+    </h3>
+    <p>from /mob/living/emote(): ()</p><h3 id="define/COMSIG_MOB_EXPLODED_WALL"><aside class="declaration">#define </aside>COMSIG_MOB_EXPLODED_WALL
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 9"/></a>
+    </h3>
+    <p>From /turf/closed/wall/ex_act</p><h3 id="define/COMSIG_MOB_EXPLODE_W_FRAME"><aside class="declaration">#define </aside>COMSIG_MOB_EXPLODE_W_FRAME
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L13">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 13"/></a>
+    </h3>
+    <p>From /obj/structure/window/framed/ex_act</p><h3 id="define/COMSIG_MOB_FIRED_GUN"><aside class="declaration">#define </aside>COMSIG_MOB_FIRED_GUN
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L33">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 33"/></a>
+    </h3>
+    <p>From /projectiles/updated_projectiles/guns/proc/fire</p><h3 id="define/COMSIG_MOB_FIRED_GUN_ATTACHMENT"><aside class="declaration">#define </aside>COMSIG_MOB_FIRED_GUN_ATTACHMENT
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 35"/></a>
+    </h3>
+    <p>From /projectiles/updated_projectiles/guns/proc/fire_attachment</p><h3 id="define/COMSIG_MOB_GETTING_UP"><aside class="declaration">#define </aside>COMSIG_MOB_GETTING_UP
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 39"/></a>
+    </h3>
+    <p>From /mob/proc/update_canmove()</p><h3 id="define/COMSIG_MOB_GRAB_UPGRADE"><aside class="declaration">#define </aside>COMSIG_MOB_GRAB_UPGRADE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L94">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 94"/></a>
+    </h3>
+    <p>From /obj/item/grab/attack_self(mob/user)</p><h3 id="define/COMSIG_MOB_ITEM_UNEQUIPPED"><aside class="declaration">#define </aside>COMSIG_MOB_ITEM_UNEQUIPPED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 45"/></a>
+    </h3>
+    <p>From /obj/item/proc/unequipped()</p><h3 id="define/COMSIG_MOB_KNOCKED_DOWN"><aside class="declaration">#define </aside>COMSIG_MOB_KNOCKED_DOWN
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L41">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 41"/></a>
+    </h3>
+    <p>From /mob/proc/update_canmove()</p><h3 id="define/COMSIG_MOB_LOGIN"><aside class="declaration">#define </aside>COMSIG_MOB_LOGIN
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L75">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 75"/></a>
+    </h3>
+    <p>from base of /mob/Login(): ()</p><h3 id="define/COMSIG_MOB_LOGOUT"><aside class="declaration">#define </aside>COMSIG_MOB_LOGOUT
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L77">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 77"/></a>
+    </h3>
+    <p>from base of /mob/Logout(): ()</p><h3 id="define/COMSIG_MOB_RESET_VIEW"><aside class="declaration">#define </aside>COMSIG_MOB_RESET_VIEW
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L67">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 67"/></a>
+    </h3>
+    <p>Called in /mob/reset_view(): (atom/A)</p><h3 id="define/COMSIG_MOB_SET_FACE_DIR"><aside class="declaration">#define </aside>COMSIG_MOB_SET_FACE_DIR
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 54"/></a>
+    </h3>
+    <p>From base of /mob/proc/set_face_dir(): (newdir)</p><h3 id="define/COMSIG_MOB_WEED_SLOWDOWN"><aside class="declaration">#define </aside>COMSIG_MOB_WEED_SLOWDOWN
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L58">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 58"/></a>
+    </h3>
+    <p>From /obj/effect/alien/weeds/Crossed(atom/movable/AM)</p><h3 id="define/COMSIG_MOB_WINDOW_EXPLODED"><aside class="declaration">#define </aside>COMSIG_MOB_WINDOW_EXPLODED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/dcs/signals/atom/mob/signals_mob.dm#L19">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;atom&#x2F;mob&#x2F;signals_mob.dm 19"/></a>
+    </h3>
+    <p>From /obj/structure/window/ex_act</p></main>
+<footer>
+    colonialmarines.dme
+    <a href="https://github.com/cmss13-devs/cmss13/tree/ca679474037f2dee1f9e46a466428087ba02e54c">ca67947</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

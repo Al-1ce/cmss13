@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;traits.dm - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/traits.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/traits.dm 
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_YAUTJA_TECH">TRAIT_YAUTJA_TECH</a></th><td>Example trait
+Knowledge of Yautja technology</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SUPER_STRONG">TRAIT_SUPER_STRONG</a></th><td>Absolutely RIPPED. Can do misc. heavyweight stuff others can't. (Yautja, Synths)</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_FOREIGN_BIO">TRAIT_FOREIGN_BIO</a></th><td>Foreign biology. Basic medHUDs won't show the mob. (Yautja, Zombies)</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_INTENT_EYES">TRAIT_INTENT_EYES</a></th><td>Eye color changes on intent. (G1 Synths)</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_INFILTRATOR_SYNTH">TRAIT_INFILTRATOR_SYNTH</a></th><td>Masked synthetic biology. Basic medHUDs will percieve the mob as human. (Infiltrator Synths)</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_XENONID">TRAIT_XENONID</a></th><td>If the Hive is a Xenonid Hive</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_NO_HIVE_DELAY">TRAIT_NO_HIVE_DELAY</a></th><td>If the Hive delays round end (this is overriden for some hives). Does not occur naturally. Must be applied in events.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_NO_COLOR">TRAIT_NO_COLOR</a></th><td>If the Hive uses it's colors on the mobs. Does not occur naturally, excepting the Mutated hive.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_NESTED">TRAIT_NESTED</a></th><td>If the mob is nested.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_CRAWLER">TRAIT_CRAWLER</a></th><td>If the mob can crawl through pipes equipped</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SIMPLE_DESC">TRAIT_SIMPLE_DESC</a></th><td>If the mob is hidden from examination</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_LISPING">TRAIT_LISPING</a></th><td>Replace s with th in talking</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_TWOBORE_TRAINING">TRAIT_TWOBORE_TRAINING</a></th><td>If the mob can handle the superheavy two-bore rifle and speaks its fluff lines when landing hits with it.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_NEARSIGHTED_EQUIPMENT">TRAIT_NEARSIGHTED_EQUIPMENT</a></th><td>If the mob has equipment that alleviates nearsightedness</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_DEXTROUS">TRAIT_DEXTROUS</a></th><td>If the mob is affected by drag delay.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_CHARGING">TRAIT_CHARGING</a></th><td>If the mob is currently charging (xeno only)</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_LEADERSHIP">TRAIT_LEADERSHIP</a></th><td>If the mob has leadership abilities (giving orders).</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_REAGENT_SCANNER">TRAIT_REAGENT_SCANNER</a></th><td>If the mob can see the reagents contents of stuff</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SPOTTER_LAZED">TRAIT_SPOTTER_LAZED</a></th><td>If the mob is being lazed by a sniper spotter</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_EAR_PROTECTION">TRAIT_EAR_PROTECTION</a></th><td>If the mob has ear protection. Protects from external ear damage effects. Includes explosions, firing the RPG, screeching DEAFNESS only, and flashbangs.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SANTA">TRAIT_SANTA</a></th><td>If the mob is Santa. Enough said.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_BIMEX">TRAIT_BIMEX</a></th><td>If the mob is wearing bimex glasses. Used for badass laser deflection flavor text.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_EMOTE_CD_EXEMPT">TRAIT_EMOTE_CD_EXEMPT</a></th><td>Stops emote cooldown</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_HOLDS_CANE">TRAIT_HOLDS_CANE</a></th><td>If the mob is holding a cane.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_USING_WHEELCHAIR">TRAIT_USING_WHEELCHAIR</a></th><td>If the mob is buckled to a wheelchair.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_ABILITY_NO_PLASMA_TRANSFER">TRAIT_ABILITY_NO_PLASMA_TRANSFER</a></th><td>Xenos with this trait cannot have plasma transfered to them</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_ABILITY_OVIPOSITOR">TRAIT_ABILITY_OVIPOSITOR</a></th><td>Shows that the xeno queen is on ovi</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_TABLE_FLIPPING">TRAIT_TABLE_FLIPPING</a></th><td>If the table is being flipped, prevent any changes that will mess with adjacency handling</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_INHERENT">TRAIT_SOURCE_INHERENT</a></th><td>Example trait source</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_SPECIES">TRAIT_SOURCE_SPECIES</a></th><td>Status trait coming from species. .human/species_gain()</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_HIVE">TRAIT_SOURCE_HIVE</a></th><td>Status trait coming from the hive.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_BUCKLE">TRAIT_SOURCE_BUCKLE</a></th><td>Status trait coming from being buckled.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_QUIRK">TRAIT_SOURCE_QUIRK</a></th><td>Status trait coming from roundstart quirks (that don't exist yet). Unremovable by REMOVE_TRAIT</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_SQUAD_LEADER">TRAIT_SOURCE_SQUAD_LEADER</a></th><td>Status trait coming from being assigned as [acting] squad leader.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_JOB">TRAIT_SOURCE_JOB</a></th><td>Status trait coming from their job</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_ADMIN">TRAIT_SOURCE_ADMIN</a></th><td>Status trait forced by staff</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_EQUIPMENT">TRAIT_SOURCE_EQUIPMENT</a></th><td>Status trait coming from equipment</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_SKILL">TRAIT_SOURCE_SKILL</a></th><td>Status trait coming from skill</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_ATTACHMENT">TRAIT_SOURCE_ATTACHMENT</a></th><td>Status trait coming from attachment</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_ABILITY">TRAIT_SOURCE_ABILITY</a></th><td>Status trait coming from ability</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_XENO_ACTION_CHARGE">TRAIT_SOURCE_XENO_ACTION_CHARGE</a></th><td>Status trait forced by the xeno action charge</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_FLIP_TABLE">TRAIT_SOURCE_FLIP_TABLE</a></th><td>Status trait coming from being flipped or unflipped.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_WEAPON">TRAIT_SOURCE_WEAPON</a></th><td>Status trait from weapons?? buh</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SOURCE_ITEM">TRAIT_SOURCE_ITEM</a></th><td>Status trait coming from generic items</td></tr></table><h2 id="define">Define Details</h2>
+<h3 id="define/TRAIT_ABILITY_NO_PLASMA_TRANSFER"><aside class="declaration">#define </aside>TRAIT_ABILITY_NO_PLASMA_TRANSFER
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L177">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 177"/></a>
+    </h3>
+    <p>Xenos with this trait cannot have plasma transfered to them</p><h3 id="define/TRAIT_ABILITY_OVIPOSITOR"><aside class="declaration">#define </aside>TRAIT_ABILITY_OVIPOSITOR
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L179">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 179"/></a>
+    </h3>
+    <p>Shows that the xeno queen is on ovi</p><h3 id="define/TRAIT_BIMEX"><aside class="declaration">#define </aside>TRAIT_BIMEX
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L167">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 167"/></a>
+    </h3>
+    <p>If the mob is wearing bimex glasses. Used for badass laser deflection flavor text.</p><h3 id="define/TRAIT_CHARGING"><aside class="declaration">#define </aside>TRAIT_CHARGING
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L155">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 155"/></a>
+    </h3>
+    <p>If the mob is currently charging (xeno only)</p><h3 id="define/TRAIT_CRAWLER"><aside class="declaration">#define </aside>TRAIT_CRAWLER
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 143"/></a>
+    </h3>
+    <p>If the mob can crawl through pipes equipped</p><h3 id="define/TRAIT_DEXTROUS"><aside class="declaration">#define </aside>TRAIT_DEXTROUS
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L153">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 153"/></a>
+    </h3>
+    <p>If the mob is affected by drag delay.</p><h3 id="define/TRAIT_EAR_PROTECTION"><aside class="declaration">#define </aside>TRAIT_EAR_PROTECTION
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L163">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 163"/></a>
+    </h3>
+    <p>If the mob has ear protection. Protects from external ear damage effects. Includes explosions, firing the RPG, screeching DEAFNESS only, and flashbangs.</p><h3 id="define/TRAIT_EMOTE_CD_EXEMPT"><aside class="declaration">#define </aside>TRAIT_EMOTE_CD_EXEMPT
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L169">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 169"/></a>
+    </h3>
+    <p>Stops emote cooldown</p><h3 id="define/TRAIT_FOREIGN_BIO"><aside class="declaration">#define </aside>TRAIT_FOREIGN_BIO
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L125">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 125"/></a>
+    </h3>
+    <p>Foreign biology. Basic medHUDs won't show the mob. (Yautja, Zombies)</p><h3 id="define/TRAIT_HOLDS_CANE"><aside class="declaration">#define </aside>TRAIT_HOLDS_CANE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L171">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 171"/></a>
+    </h3>
+    <p>If the mob is holding a cane.</p><h3 id="define/TRAIT_INFILTRATOR_SYNTH"><aside class="declaration">#define </aside>TRAIT_INFILTRATOR_SYNTH
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L129">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 129"/></a>
+    </h3>
+    <p>Masked synthetic biology. Basic medHUDs will percieve the mob as human. (Infiltrator Synths)</p><h3 id="define/TRAIT_INTENT_EYES"><aside class="declaration">#define </aside>TRAIT_INTENT_EYES
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L127">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 127"/></a>
+    </h3>
+    <p>Eye color changes on intent. (G1 Synths)</p><h3 id="define/TRAIT_LEADERSHIP"><aside class="declaration">#define </aside>TRAIT_LEADERSHIP
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L157">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 157"/></a>
+    </h3>
+    <p>If the mob has leadership abilities (giving orders).</p><h3 id="define/TRAIT_LISPING"><aside class="declaration">#define </aside>TRAIT_LISPING
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L147">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 147"/></a>
+    </h3>
+    <p>Replace s with th in talking</p><h3 id="define/TRAIT_NEARSIGHTED_EQUIPMENT"><aside class="declaration">#define </aside>TRAIT_NEARSIGHTED_EQUIPMENT
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L151">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 151"/></a>
+    </h3>
+    <p>If the mob has equipment that alleviates nearsightedness</p><h3 id="define/TRAIT_NESTED"><aside class="declaration">#define </aside>TRAIT_NESTED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L141">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 141"/></a>
+    </h3>
+    <p>If the mob is nested.</p><h3 id="define/TRAIT_NO_COLOR"><aside class="declaration">#define </aside>TRAIT_NO_COLOR
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L137">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 137"/></a>
+    </h3>
+    <p>If the Hive uses it's colors on the mobs. Does not occur naturally, excepting the Mutated hive.</p><h3 id="define/TRAIT_NO_HIVE_DELAY"><aside class="declaration">#define </aside>TRAIT_NO_HIVE_DELAY
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L135">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 135"/></a>
+    </h3>
+    <p>If the Hive delays round end (this is overriden for some hives). Does not occur naturally. Must be applied in events.</p><h3 id="define/TRAIT_REAGENT_SCANNER"><aside class="declaration">#define </aside>TRAIT_REAGENT_SCANNER
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L159">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 159"/></a>
+    </h3>
+    <p>If the mob can see the reagents contents of stuff</p><h3 id="define/TRAIT_SANTA"><aside class="declaration">#define </aside>TRAIT_SANTA
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L165">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 165"/></a>
+    </h3>
+    <p>If the mob is Santa. Enough said.</p><h3 id="define/TRAIT_SIMPLE_DESC"><aside class="declaration">#define </aside>TRAIT_SIMPLE_DESC
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L145">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 145"/></a>
+    </h3>
+    <p>If the mob is hidden from examination</p><h3 id="define/TRAIT_SOURCE_ABILITY"><aside class="declaration">#define </aside>TRAIT_SOURCE_ABILITY
+            <aside>(ability)</aside>
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L331">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 331"/></a>
+    </h3>
+    <p>Status trait coming from ability</p><h3 id="define/TRAIT_SOURCE_ADMIN"><aside class="declaration">#define </aside>TRAIT_SOURCE_ADMIN
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L323">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 323"/></a>
+    </h3>
+    <p>Status trait forced by staff</p><h3 id="define/TRAIT_SOURCE_ATTACHMENT"><aside class="declaration">#define </aside>TRAIT_SOURCE_ATTACHMENT
+            <aside>(slot)</aside>
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L329">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 329"/></a>
+    </h3>
+    <p>Status trait coming from attachment</p><h3 id="define/TRAIT_SOURCE_BUCKLE"><aside class="declaration">#define </aside>TRAIT_SOURCE_BUCKLE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L315">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 315"/></a>
+    </h3>
+    <p>Status trait coming from being buckled.</p><h3 id="define/TRAIT_SOURCE_EQUIPMENT"><aside class="declaration">#define </aside>TRAIT_SOURCE_EQUIPMENT
+            <aside>(slot)</aside>
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L325">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 325"/></a>
+    </h3>
+    <p>Status trait coming from equipment</p><h3 id="define/TRAIT_SOURCE_FLIP_TABLE"><aside class="declaration">#define </aside>TRAIT_SOURCE_FLIP_TABLE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L336">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 336"/></a>
+    </h3>
+    <p>Status trait coming from being flipped or unflipped.</p><h3 id="define/TRAIT_SOURCE_HIVE"><aside class="declaration">#define </aside>TRAIT_SOURCE_HIVE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L313">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 313"/></a>
+    </h3>
+    <p>Status trait coming from the hive.</p><h3 id="define/TRAIT_SOURCE_INHERENT"><aside class="declaration">#define </aside>TRAIT_SOURCE_INHERENT
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L308">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 308"/></a>
+    </h3>
+    <p>Example trait source</p><h3 id="define/TRAIT_SOURCE_ITEM"><aside class="declaration">#define </aside>TRAIT_SOURCE_ITEM
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L341">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 341"/></a>
+    </h3>
+    <p>Status trait coming from generic items</p><h3 id="define/TRAIT_SOURCE_JOB"><aside class="declaration">#define </aside>TRAIT_SOURCE_JOB
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L321">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 321"/></a>
+    </h3>
+    <p>Status trait coming from their job</p><h3 id="define/TRAIT_SOURCE_QUIRK"><aside class="declaration">#define </aside>TRAIT_SOURCE_QUIRK
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L317">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 317"/></a>
+    </h3>
+    <p>Status trait coming from roundstart quirks (that don't exist yet). Unremovable by REMOVE_TRAIT</p><h3 id="define/TRAIT_SOURCE_SKILL"><aside class="declaration">#define </aside>TRAIT_SOURCE_SKILL
+            <aside>(skill)</aside>
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L327">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 327"/></a>
+    </h3>
+    <p>Status trait coming from skill</p><h3 id="define/TRAIT_SOURCE_SPECIES"><aside class="declaration">#define </aside>TRAIT_SOURCE_SPECIES
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L311">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 311"/></a>
+    </h3>
+    <p>Status trait coming from species. .human/species_gain()</p><h3 id="define/TRAIT_SOURCE_SQUAD_LEADER"><aside class="declaration">#define </aside>TRAIT_SOURCE_SQUAD_LEADER
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L319">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 319"/></a>
+    </h3>
+    <p>Status trait coming from being assigned as [acting] squad leader.</p><h3 id="define/TRAIT_SOURCE_WEAPON"><aside class="declaration">#define </aside>TRAIT_SOURCE_WEAPON
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L339">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 339"/></a>
+    </h3>
+    <p>Status trait from weapons?? buh</p><h3 id="define/TRAIT_SOURCE_XENO_ACTION_CHARGE"><aside class="declaration">#define </aside>TRAIT_SOURCE_XENO_ACTION_CHARGE
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L333">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 333"/></a>
+    </h3>
+    <p>Status trait forced by the xeno action charge</p><h3 id="define/TRAIT_SPOTTER_LAZED"><aside class="declaration">#define </aside>TRAIT_SPOTTER_LAZED
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L161">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 161"/></a>
+    </h3>
+    <p>If the mob is being lazed by a sniper spotter</p><h3 id="define/TRAIT_SUPER_STRONG"><aside class="declaration">#define </aside>TRAIT_SUPER_STRONG
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L123">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 123"/></a>
+    </h3>
+    <p>Absolutely RIPPED. Can do misc. heavyweight stuff others can't. (Yautja, Synths)</p><h3 id="define/TRAIT_TABLE_FLIPPING"><aside class="declaration">#define </aside>TRAIT_TABLE_FLIPPING
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L215">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 215"/></a>
+    </h3>
+    <p>If the table is being flipped, prevent any changes that will mess with adjacency handling</p><h3 id="define/TRAIT_TWOBORE_TRAINING"><aside class="declaration">#define </aside>TRAIT_TWOBORE_TRAINING
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L149">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 149"/></a>
+    </h3>
+    <p>If the mob can handle the superheavy two-bore rifle and speaks its fluff lines when landing hits with it.</p><h3 id="define/TRAIT_USING_WHEELCHAIR"><aside class="declaration">#define </aside>TRAIT_USING_WHEELCHAIR
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L173">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 173"/></a>
+    </h3>
+    <p>If the mob is buckled to a wheelchair.</p><h3 id="define/TRAIT_XENONID"><aside class="declaration">#define </aside>TRAIT_XENONID
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L133">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 133"/></a>
+    </h3>
+    <p>If the Hive is a Xenonid Hive</p><h3 id="define/TRAIT_YAUTJA_TECH"><aside class="declaration">#define </aside>TRAIT_YAUTJA_TECH
+            <a href="https://github.com/cmss13-devs/cmss13/blob/ca679474037f2dee1f9e46a466428087ba02e54c/code/__DEFINES/traits.dm#L121">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 121"/></a>
+    </h3>
+    <p>Example trait
+Knowledge of Yautja technology</p></main>
+<footer>
+    colonialmarines.dme
+    <a href="https://github.com/cmss13-devs/cmss13/tree/ca679474037f2dee1f9e46a466428087ba02e54c">ca67947</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
